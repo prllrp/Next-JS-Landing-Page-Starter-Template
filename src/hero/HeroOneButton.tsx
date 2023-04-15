@@ -15,7 +15,7 @@ const HeroOneButton = (props: IHeroOneButtonProps) => (
 
     <div className="text-2xl mt-4 mb-16 font-bold">
       {
-        'Coming soon to San Antonio! Leave your email below to be notified when we launch and receive a discount.'
+        'Coming soon to San Antonio! Leave your email below to be notified when we launch and receive a discount!'
       }
     </div>
     {props.button}
