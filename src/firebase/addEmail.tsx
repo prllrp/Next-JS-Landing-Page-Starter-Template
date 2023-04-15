@@ -19,6 +19,7 @@ export default async function addEmail(email: string) {
     try {
       const docRef = await addDoc(collection(db, 'emails'), {
         email,
+        time: new Date().toISOString(),
       });
       console.log('Document written with ID: ', docRef);
       alert('Thank you for your interest! We will be in touch soon!');
