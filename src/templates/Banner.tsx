@@ -1,23 +1,28 @@
-import Link from 'next/link';
-
-import { Button } from '../button/Button';
-import { CTABanner } from '../cta/CTABanner';
+import { Background } from '../background/Background';
+import { HeroOneButton } from '../hero/HeroOneButton';
 import { Section } from '../layout/Section';
 
 const Banner = () => (
-  <Section>
-    <CTABanner
-      title="Lorem ipsum dolor sit amet consectetur adipisicing elit."
-      subtitle="Start your Free Trial."
-      button={
-        <Link href="https://creativedesignsguru.com/category/nextjs/">
-          <a>
-            <Button>Get Started</Button>
-          </a>
-        </Link>
-      }
-    />
-  </Section>
+  <Background color="bg-gray-900">
+    <Section>
+      <HeroOneButton
+        title={<></>}
+        description=""
+        button={
+          <div>
+            <input
+              type="text"
+              placeholder="Enter your email"
+              className="px-8 py-3 rounded-lg border border-gray-700 mr-4"
+            />
+            <button className="bg-primary-500 text-white px-6 py-3 rounded-lg">
+              Submit{' '}
+            </button>
+          </div>
+        }
+      />
+    </Section>
+  </Background>
 );
 
 export { Banner };
